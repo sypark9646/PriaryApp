@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Priary</string>
+    <string name="app_start">시작하기</string>
 </resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:opacity="opaque">
+
+    <ImageView
+        android:layout_width="95dp"
+        android:layout_height="128dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="196dp"
+        android:layout_marginBottom="316dp"
+        android:gravity="center"
+        android:src="@drawable/splash_icon_color" />
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="334dp"
+        android:layout_marginBottom="264dp"
+        android:fontFamily="@font/baskervillebold"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPriary"
+        android:textSize="37sp" />
+
+    <Button
+        android:id="@+id/tutorial_end_button"
+        android:layout_width="184dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="408dp"
+        android:layout_marginBottom="184dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/app_start"
+        android:textColor="@color/colorPriary"
+        android:typeface="sans" />
+</RelativeLayout>
