@@ -39,7 +39,6 @@ public class TutorialFragment extends Fragment {
             buttonTutorialEnd.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    System.out.println("***********click event");
                     getActivity().startActivity(new Intent(getActivity(), MainActivity.class));
                     getActivity().finish();
                 }

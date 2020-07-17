@@ -14,8 +14,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent intent = new Intent(this, SplashActivity.class);
-        startActivity(intent);
 
         SharedPreferences sharedPreferences = getSharedPreferences("checkFirstAccess", Activity.MODE_PRIVATE);
         boolean checkFirstAccess = sharedPreferences.getBoolean("checkFirstAccess", false);
@@ -29,6 +27,9 @@ public class MainActivity extends Activity {
             Intent tutorialIntent = new Intent(MainActivity.this, TutorialActivity.class);
             startActivity(tutorialIntent);
             finish();
+        } else {
+            Intent splashIntent = new Intent(this, SplashActivity.class);
+            startActivity(splashIntent);
         }
     }
 }
